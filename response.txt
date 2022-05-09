@@ -1,0 +1,4 @@
+Hi,
+	Thank you for your feedback. 
+	1.Sorry for making the comparison unclear. To our knowledge, PSNR score is the state-of-art metric for image denoising, but we can search for other metrics later.
+	2. It's a very insightful suggestion that we can try different noise, and maybe we can try it later. But our expectation is, for salt and pepper noise, the performance will be pretty similar since none of our model make the assumption of Gaussian noise. But if we add blanks to the image, we think some of our models will fail, for example, the MRF model, we sample each pixel according to its neighbors, in the interior of the blank, it's very likely that the sampling will just return white pixel. 
